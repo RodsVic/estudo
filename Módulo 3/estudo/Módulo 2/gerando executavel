@@ -1,6 +1,0 @@
-para gerar um exe, o comando a ser usado é o pyinstaller --onefile (um arquivo)
- e o nome do arquivo
- o exemplo utilizado na aula foi pyinstaller --onefile 13-sketchpy.py
- ele vai gerar um exe no diretorio atual do arquivo
- dir > dist > exe
- 

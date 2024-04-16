@@ -1,0 +1,18 @@
+ao tentar utilizar o comando .\activate, é retornado o erro:
+    .\activate : O arquivo C:\Users\User\Desktop\estudo\curso de python\Módulo 
+2\.venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi 
+desabilitada neste sistema. Para obter mais informações, consulte about_Execution_Policies    
+em https://go.microsoft.com/fwlink/?LinkID=135170.
+No linha:1 caractere:1
++ .\activate
++ ~~~~~~~~~~
+    + CategoryInfo          : ErrodeSegurança: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+isso acontece por que o powershell tem uma política de segurança, que pode
+ser alterada para ativar o venv
+
+abra o power shell como admininstador, digite o codigo
+Set-ExecutionPolicy Unrestricted
+
+e ative o venv
